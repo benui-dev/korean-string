@@ -1,16 +1,32 @@
 = korean-string
 
-Description goes here.
+Split Korean characters to individual compontents, join components together to create characters.
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+You could use it to make some weird conjugation rules. Go wild.
+
+== Methods
+
+=== String.split_ko
+
+Return an array of arrays of Korean character components
+
+    require 'korean-string'
+    '읽어싶'.split_ko
+    => [["ㅇ", "ㅣ", "ㄺ"], ["ㅇ", "ㅓ"], ["ㅅ", "ㅣ", "ㅍ"]]
+
+=== Array.join_ko
+
+Accepts an array of character pieces
+
+    require 'korean-string'
+    [["ㅇ", "ㅣ", "ㄺ"], ["ㅇ", "ㅓ"], ["ㅅ", "ㅣ", "ㅍ"]].join_ko
+    => '읽어싶'
+
+
+== Todo
+
+Come up with other useful methods?
+
 
 == Copyright
 
