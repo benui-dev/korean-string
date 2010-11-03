@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "korean-string"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Korean string join and split}
+    gem.description = %Q{Split Korean characters to individual compontents, join components together to create characters}
     gem.email = "benhumphreys@gmail.com"
     gem.homepage = "http://github.com/bhumphreys/korean-string"
     gem.authors = ["Ben Humphreys"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    #gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
