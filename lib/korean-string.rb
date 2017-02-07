@@ -5,7 +5,7 @@
 # http://www.w3c.or.kr/i18n/hangul-i18n/ko-code.html
 # (Thanks to @ntrolls for this)
 
-$KCODE = 'UTF8'
+$KCODE = 'UTF8' unless RUBY_VERSION > '1.9.0'
 
          # ㄱ      ㄲ      ㄴ      ㄷ      ㄸ      ㄹ      ㅁ      ㅂ      
 CHOSUNG = [0x3131, 0x3132, 0x3134, 0x3137, 0x3138, 0x3139, 0x3141, 0x3142,
