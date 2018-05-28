@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Korean string join and split}
   spec.description   = %q{Split Korean characters to individual compontents, join components together to create characters}
-  spec.homepage      = "https://github.com/bhumphreys/korean-string"
+  spec.homepage      = "https://github.com/daangn/korean-string"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features|example)/}) }
   spec.bindir        = "exe"
