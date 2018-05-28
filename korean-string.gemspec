@@ -17,4 +17,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.metadata['allowed_push_host'] = 'https://rg.daangn.com:59005/private'
 end
